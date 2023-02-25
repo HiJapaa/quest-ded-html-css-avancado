@@ -1,4 +1,4 @@
 :root {
-    --violet: hsl(257, 40%, 49%);
-    --hover: hsl(300, 69%, 71%);
+    --cor-fundo: hsl(257, 40%, 49%);
+    --cor-fundo-hover: hsl(300, 69%, 71%);
 }
