@@ -37,9 +37,10 @@ main {
     margin-top: 50px;
 }
 
-.container .info h2{
+.container .info h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 3.5rem;
+    max-width: 400px;
 }
 
 .container .info p {
@@ -52,7 +53,7 @@ main {
 .container .info a {
     font-family: 'Poppins', sans-serif;
     font-size: 1.8rem;
-    color: var(--violet);
+    color: var(--cor-fundo);
     background-color: #ffffff;
     border-radius: 35px;
     padding: 15px 60px;
