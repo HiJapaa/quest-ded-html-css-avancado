@@ -1,18 +1,21 @@
-/* font-family: 'Poppins', sans-serif;
-
-font-family: 'Open Sans', sans-serif; */
-
 html {
     font-size: 62.5%;
 }
 
 body {
-    width: 100vw;
+    min-width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background: var(--violet) url(../img/bg-desktop.png) no-repeat;
+    background: var(--cor-fundo) url(../img/bg-desktop.png) no-repeat;
     padding: 40px 45px;
     color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    max-width: 1440px;
 }
 
 .header {
@@ -58,7 +61,7 @@ body {
 
 .container .info a:hover {
     color: #ffffff;
-    background-color: var(--hover);
+    background-color: var(--cor-fundo-hover);
 }
 
 .socials {
@@ -89,85 +92,5 @@ body {
 }
 
 .socials li:hover a, .socials li:hover {
-    color: var(--hover);
-}
-
-
-@media (max-width: 1440px) {
-    .container img {
-        width: 75%;
-    }
-
-    .container .info {
-        margin-top: 0;
-    }
-
-    .container .info h2{
-        font-size: 3rem;
-    }
-
-    .container .info p, .container .info a {
-        font-size: 1.6rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
-
-    .container .info {
-        margin-top: 0;
-        text-align: center;
-    }
-
-    .container .info h2 {
-        font-size: 2.5rem;
-    }
-
-    .socials {
-        justify-content: center;
-        margin-top: 35px;
-    }
-}
-
-@media (max-width: 425px) {
-    body {
-        background: var(--violet) url(../img/bg-mobile.png) no-repeat;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 40px 30px;
-    }
-
-    .logo img {
-        width: 150px;
-    }
-
-    .container {
-        margin: 0;
-    }
-
-    .container img {
-        width: 100%;
-    }
-
-    .container .info a {
-        padding: 10px 70px;
-    }
-
-    .footer .socials {
-        gap: 10px;
-    }
-
-    .socials li {
-        width: 34px;
-        height: 34px;
-    }
-
-    .socials li a {
-        font-size: 1.6rem;
-    }
+    color: var(--cor-fundo-hover);
 }
